@@ -2,51 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+
+/* Banner */
+
 .banner {
-    width: 100%;
-    height: 2.5em;
-    background-color: #11346F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 2.5em;
+  background-color: #11346F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner p {
-    color: white;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 0.875rem;
-    line-height: 1.875rem;
-    color: #FFFFFF;
-    letter-spacing: 0.1em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
 }
 
+
+/* Navbar */
+
+
 .navbar{
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    padding: 6;
-    padding: 1.5rem;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgba(245, 253, 255, 0.8);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(14px);
 }
 
 .navbar__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 1.5rem;
+
 }
 
 .navbar__logo {
@@ -59,29 +68,35 @@ a {
 }
 
 .navbar__menu > * + *  {
-	margin-left: 3.5rem; 
+	margin-left: 1rem; 
 }
 
 
 .navbar__menu-item-one {
-    color: #11346F;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    letter-spacing: 0.05em;
+  color: #11346F;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
 }
 
 .navbar__menu-items {
-    color: #11346F;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    letter-spacing: 0.05em;
-    opacity: 0.75;
+  color: #11346F;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.navbar__menu-items:hover {
+  opacity: 2;
 }
 
 .navbar__button {
@@ -90,7 +105,6 @@ a {
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1rem;
-    /* identical to box height */
     text-align: center;
     color: #FFFFFF;
     background: #197AFF;
@@ -100,40 +114,360 @@ a {
     padding-right: 2rem;
     letter-spacing: 0.05em;
     outline: none;
+    display: none;
+}
+
+.navbar__button:hover {
+  opacity: .8;
+}
+
+
+/* Header */
+
+
+.header {
+  background-color: #FBFBFB;
+  max-height: 38.0625em;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.header__left > * + * {
+  margin-top: 2.5rem;
+}
+
+.header__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__heading h1{ 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.625rem;
+  line-height: 3.4375rem;
+  letter-spacing: 0.05em;
+  color: #11346F;
+}
+
+.header__heading h1 span {
+    color:  #197AFF;  
+    z-index: -1;
+    background-image: url('assets/headerUnderline.svg');
+    background-repeat: no-repeat;
+    padding-bottom: .6rem;
+    /* background-size: cover; */
+    background-position: bottom center;
+}
+
+
+.header__paragraph {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.12rem;
+  line-height: 28px;
+  color: #262626;
+  max-width: 45.68em;
+}
+
+.header__features {
+  display: flex;
+  flex-direction: row;
+  background: rgba(174, 204, 255, 0.1);
+  border: 1px solid rgba(174, 204, 255, 0.5);
+  border-radius: 10px;
+  width: 42.875em;
+  height: 9.5em;
+}
+
+.header__features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  padding: 1.4rem; 
+}
+
+.header__features > .header__features-item:nth-child(-n+3) {
+  border-right: 1px solid rgba(174, 204, 255, 0.5);
+}
+
+
+.header__features-item h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #11346F;
+}
+
+.header__features-item ul > * {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+
+  text-align: center;
+  color: #262626;
+}
+
+.header__features-item > * + * {
+  margin-top: 0.5rem;
+}
+
+.header__features-item ul  > * + *  {
+  margin-top: 0.2rem;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons > * + * {
+  margin-top: 0.5rem;
+}
+
+.header__buttons a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  background: #197AFF;
+  border-radius: 9999px;
+  padding: 1rem; 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 0.05em;
+  outline: none;
+}
+
+.header__buttons a:hover {
+  opacity: 0.8;
+}
+
+.header__buttons div {
+  background: rgba(77, 145, 207, 0.15);
+  box-shadow: 0px 0px 14px #FFFFFF;
+  border-radius: 30px;
+  width: 15em;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  /* identical to box height, or 93% */
+
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+
+.header__buttons div span {
+  color: #197AFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 14px;
 }
 
 
 
 
+.header__right {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
 
+
+
+
+/*  */
+/* 
+
+/* 
+/* 
+/* 
+/
+
+/
+/
+//
+
+//
+
+ */
+
+
+/* Banner */
+
+
+.banner__two {
+  width: 100%;
+  height: 5em;
+  background-color: #11346F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner__two > * + * {
+  	margin-left: 4rem;
+}
+
+.banner__two-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner__two-item > * + * { 
+  	margin-left: 1rem;
+
+}
+
+.banner__two-item p{
+
+font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+
+}
+
+.banner__two-item img{
+  width: 3.125em;
+	object-fit: cover;
+}
 
 
 @media (min-width: 480px) {
-  .navbar {
+  /* .navbar {
     max-width: 480px;
-  }
+  } */
 }
+
 
 @media (min-width: 768px) {
-  .navbar {
-    max-width: 768px;
+    /* .navbar {
+        width: 100%;
+      } */
+  .navbar__menu {
+    display: flex;
+  }
+  .navbar__button {
+    display: block;
+  }
+  .navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
+
 @media (min-width: 976px) {
-  .navbar {
+  /* .navbar {
     max-width: 976px;
+  } */
+  .navbar__menu > * + *  {
+  	margin-left: 3.5rem; 
   }
+  
 }
 
 @media (min-width: 1440px) {
-  .navbar {
+  /* .navbar {
     max-width: 1440px;
-  }
+  z} */
 }
 
-@media (min-width: 768px) {
-    .navbar__menu {
-        display: flex;
-    }
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: url('assets/VectorUp.png');
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url('assets/VectorDown.png');
+}
+
+.seeAll::after {
+  content: url('assets/VectorDown.png');
 }
