@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 *{
@@ -127,7 +127,7 @@ a {
 
 .header {
   background-color: #FBFBFB;
-  max-height: 38.0625em;
+  height: 38.0625em;
 }
 
 .header__container {
@@ -168,7 +168,6 @@ a {
     background-image: url('assets/headerUnderline.svg');
     background-repeat: no-repeat;
     padding-bottom: .6rem;
-    /* background-size: cover; */
     background-position: bottom center;
 }
 
@@ -180,7 +179,7 @@ a {
   font-size: 1.12rem;
   line-height: 28px;
   color: #262626;
-  max-width: 45.68em;
+  /* max-width: 45.68em; */
 }
 
 .header__features {
@@ -321,24 +320,6 @@ a {
 
 
 
-
-/*  */
-/* 
-
-/* 
-/* 
-/* 
-/
-
-/
-/
-//
-
-//
-
- */
-
-
 /* Banner */
 
 
@@ -386,6 +367,661 @@ font-family: 'Roboto';
 }
 
 
+
+
+
+
+
+/* Payments */
+
+.payments {
+  background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+  height: 48.125em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payments > * + *	{
+  margin-top: 3rem;
+}
+
+.payments .payments__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payments .payments__heading h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 49px;
+  letter-spacing: 0.05rem;
+  
+  color: #11346F;
+}
+
+
+.payments .payments__heading h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 37px;
+  line-height: 50px;
+  letter-spacing: 0.05rem;
+  background-image: url('assets/h2underline.svg');
+  background-repeat: no-repeat;
+  padding-bottom: .6rem;
+  background-position: bottom center;
+
+  color: #FFFFFF;
+}
+
+
+.payments__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.payments__card  > * + * {
+  margin-left: 3.12rem;
+}
+
+
+
+.payments__card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 23em;
+  height: 33.125em; 
+  background: #f6f8fcaf;
+  border: 1.5px solid #197AFF;
+  border-radius: 18px;
+}
+
+.payments__card-item-one-image {
+  position: relative;
+  top: -2.7em;
+}
+
+.payments__card-item.one div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.payments__card-item.one > * + *	{
+  margin-top: 1.5rem;
+}
+
+.payments__card-item.one h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #11346F;
+}
+
+.payments__card-item.one h2 {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #11346F;
+}
+
+.payments__card-item-paragraph {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #11346F;
+}
+
+.payments__card-item-paragraph-two {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #11346F;
+}
+
+.payments__card-item-price {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.payments__card-item-guarantee > * + * {
+  margin-left: .5rem;
+}
+
+.payments__card-item-afterpay p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: .8rem;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #11346F;
+}
+
+.payments__card-item-afterpay div {
+  width: 77px;
+  height: 17.11px;
+  background: #BCF5E3;
+  border-radius: 40px;
+}
+
+.payments__card-item-afterpay > * + * {
+  margin-left: .5rem;
+}
+
+
+.payments__card-item-container {
+  display: flex;
+  flex-direction: column !important;
+}
+
+
+.payments__card-item-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 331px;
+  height: 53px;
+  background: #197AFF;
+  box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+  border-radius: 60px;
+
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.payments__card-item-container a:hover {
+  opacity: 0.8;
+}
+
+.payments__card-item-container div > * + * {
+  margin-left: 1rem;
+}
+
+
+
+
+.payments__card-item_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 23em;
+  height: 33.125em;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border: 1.5px solid #197AFF;
+  border-radius: 18px;
+}
+
+
+.payments__card-item-two-image {
+  position: relative;
+  top: -2em;
+}
+
+
+
+
+.payments__card-item_two-mp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  height: 28px;
+
+  background: #57AC73;
+  border-radius: 50px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  color: #FFFFFF;
+}
+
+
+.payments__card-item_two h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #11346F;
+}
+
+.payments__card-item_two h1 span {
+  color: #197AFF; 
+  z-index: -1;
+  background-image: url('assets/cardunderline.svg');
+  background-repeat: no-repeat;
+  padding-bottom: .3rem;
+  /* background-size: cover; */
+  background-position: bottom center;
+}
+
+.payments__card-item-two-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
+}
+
+.payments__card-item-two-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 331px;
+  height: 53px;
+  background: #197AFF;
+  box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+  border-radius: 60px;
+
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.payments__card-item-two-container a:hover {
+  opacity: 0.8;
+}
+
+.payments__card-item-two-container div > * + * {
+  margin-left: 0.8rem;
+}
+
+.payments__card-item_two  > * + *	{
+  margin-top: 0.6rem;
+}
+
+
+.payments__card-item-two-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.payments__card-item-two-newprice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payments__card-item-two-newprice h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #11346F;
+}
+
+.payments__card-item-two-newprice p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #11346F;
+}
+
+.payments__card-item-two-oldprice {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #93A2BB;
+
+
+  background-image: url('assets/priceline.svg');
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.payments__card-item-two-afterpay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.payments__card-item-two-afterpay p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: .8rem;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #11346F;
+}
+
+.payments__card-item-two-afterpay div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 17.11px;
+  background: #BCF5E3;
+  border-radius: 40px;
+}
+
+.payments__card-item-two-afterpay > * + * {
+  margin-left: .5rem;
+}
+
+
+
+.payments__card-item-two-save {
+  box-sizing: border-box;
+  width: 331px;
+  height: 85px;
+
+  border: 1px solid #AECCFF;
+  border-radius: 19px;
+}
+
+.payments__card-item-two-discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.payments__card-item-two-discount-one {
+  position: absolute;
+  left: 46em;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 158px;
+  height: 43px;
+  z-index: 1;
+  background: #BFF5BE;
+  border: 1px solid #99D298;
+  border-radius: 48px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: #11346F;
+}
+
+
+.payments__card-item-two-discount-two {
+  position: absolute;
+  left: 30em;
+  width: 271.31px;
+  height: 43px;
+
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  background: #F0F6FF;
+/* Blue For Text */
+
+border: 1px solid #AECCFF;
+border-radius: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.payments__card-item-three-image {
+  position: relative;
+  top: -14.5em;
+}
+
+
+
+
+
+
+/* Reviews */
+
+
+.reviews {
+  height: 722px;
+  background: #F6F8FC;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.reviews-heading {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 49px;
+  color: #11346F;
+}
+
+.reviews-heading span {
+  color: #197AFF;
+  background-image: url('assets/reviewsunderline.svg');
+  background-repeat: no-repeat;
+  padding-bottom: .6rem;
+  background-position: bottom center;
+}
+
+
+.reviews__reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.reviews__card > * + * {
+  margin-left: 2rem;
+}
+
+
+.reviews__card-item {
+  width: 285px;
+  height: 472px;
+
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+}
+
+.reviews__card-reviewer {
+  padding:  .5rem .5rem;
+}
+
+.reviews__card-item-buyer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.reviews__card-item-buyer h2 {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  color: #11346F;
+}
+
+.reviews__card-item-buyer div { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: .03rem;
+  text-align: center;
+  color: #89C25F;
+
+  margin-right: 1rem;
+}
+
+
+.reviews__card-item-buyer div > * + * {
+  margin-left: .4rem;
+}
+
+.reviews__card-item-text {
+  margin-top: 0.4rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: .06rem;
+  color: #262626;
+}
+
+
+
+
+
+
+/* FAQ */
+
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 616px;
+  background: #11346F;
+}
+
+.faq h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+
+.faq h1 span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 37px;
+  line-height: 49px;
+
+
+  background-image: url('assets/faqUnderline.svg');
+  background-repeat: no-repeat;
+  padding-bottom: .6rem;
+  
+  background-position: bottom center;
+}
+
+
+.faq__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__accordion-item {
+  
+width: 652px;
+height: 59px;
+
+background: #194081;
+border: 1px solid #31548E;
+border-radius: 9px 9px 0px 0px;
+}
+
+/*  */
+/* 
+
+/* 
+/* 
+
+/* 
+/
+
+/
+/
+//
+
+//
+
+ */
+
+
+
+
 @media (min-width: 480px) {
   /* .navbar {
     max-width: 480px;
@@ -430,7 +1066,7 @@ font-family: 'Roboto';
 
 
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+/* .accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -440,23 +1076,23 @@ font-family: 'Roboto';
   border: none;
   outline: none;
   transition: 0.4s;
-}
+} */
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+/* .active, .accordion:hover {
   background-color: #ccc;
-}
+} */
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+/* .panel {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
+} */
 
-.accordion:after {
+/* .accordion:after {
     content: url('assets/VectorUp.png');
     font-size: 13px;
     color: #777;
@@ -470,4 +1106,4 @@ font-family: 'Roboto';
 
 .seeAll::after {
   content: url('assets/VectorDown.png');
-}
+} */
