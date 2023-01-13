@@ -95,8 +95,27 @@
                 <!-- Image -->
                 <div class="header__right">
                     <img src="assets/productImage1.png" alt="">
-                    <div>
-                        <img src="assets/buyerImage.jpg" alt="">
+                    <div class="header__buyer">
+                        <img src="assets/buyerImage.jpg" alt="" class="header__buyer-image">
+                        <div>
+                            <p class="header__buyer-review">“It feels amazing on my head and it soothes muscle tension.“
+                            </p>
+                            <div class="header__buyer-verified">
+                                <div class="header__buyer-name">
+                                    <img src="assets/reviewstarss.svg" alt="">
+                                    <p>Debra N.</p>
+                                </div>
+
+                                <div class="header__buyer-verified-buyer">
+                                    <img src="assets/verifiedBuyer.svg" alt="">
+                                    <p>
+                                        VERIFIED BUYER
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -105,16 +124,20 @@
         <!-- Banner -->
         <section class="banner__two">
             <div class="banner__two-item">
-                <img src="assets/freeShipping.svg" alt="">
-                <p>FREE 2-DAY SHIPPING IN THE UNITED STATES!</p>
+                <img src="assets/freeShipping.svg" alt="" class="banner__two-svg">
+                <img src="assets/freeShipping.png" alt="" class="banner__two-image">
+                <p class="banner__two-paragraph-desktop">FREE 2-DAY SHIPPING IN THE UNITED STATES!</p>
+                <p class="banner__two-paragraph-mobile">FREE 2-DAY USA SHIPPING</p>
             </div>
             <div class="banner__two-item">
-                <img src="assets/guarantee.svg" alt="">
-                <p>30 DAY 100% MONEY BACK GUARANTEE</p>
+                <img src="assets/guarantee.svg" alt="" class="banner__two-svg">
+                <img src="assets/guarantee.png" alt="" class="banner__two-image">
+                <p class="banner__two-paragraph-desktop">30 DAY 100% MONEY BACK GUARANTEE</p>
+                <p class="banner__two-paragraph-mobile">100% MONEY-BACK GUARANTEE</p>
             </div>
-            <div class="banner__two-item">
+            <div class="banner__two-item banner-three">
                 <img src="assets/star.svg" alt="">
-                <p>RAVE REVIEWS FROM OUR CUSTOMERS</p>
+                <p class="banner__two-paragraph-desktop">RAVE REVIEWS FROM OUR CUSTOMERS</p>
             </div>
         </section>
 
@@ -178,9 +201,11 @@
                     <div class="payments__card-item-two-save">
                         <div class="payments__card-item-two-discount">
                             <div class="payments__card-item-two-discount-one">SAVE $70 - 33% OFF!</div>
-                            <div class=" "><img src="assets/moneyback.png" alt="">30-Day Money Back</div>
+                            <div class="payments__card-item-two-discount-two"><img src="assets/moneyback.png" alt="">
+                                <p>30-Day Money Back</p>
+                            </div>
                         </div>
-                        <p>6 orders at this price remaining</p>
+                        <p class="payments__card-item-two-remaining">6 orders at this price remaining</p>
                     </div>
                     <div class="payments__card-item-two-container">
                         <a href="#">GET YOUR MAGIC</a>
@@ -195,9 +220,159 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="payments__card-item three">
+                <!-- Third Card -->
+                <div class="payments__card-item three">
                     <img src="assets/mmassagefive.png" alt="" class="payments__card-item-three-image">
-                </div> -->
+                    <div class="payments__card-item_three-mp">Best Value</div>
+                    <h1>Buy 2 + <span>Get 2 Free</span></h1>
+                    <div class="payments__card-item-two-price">
+                        <div class="payments__card-item-two-newprice">
+                            <h2>$209.85</h2>
+                            <p>+ Free Shipping</p>
+                        </div>
+                        <div class="payments__card-item-two-oldprice">$349.95</div>
+                    </div>
+                    <div class="payments__card-item-two-afterpay">
+                        <p>or 4 interest-free installments of <strong>$52.50</strong> by</p>
+                        <div>
+                            <img src="assets/afterpay.png" alt="" class="payments__card-item-one-afterpay">
+                        </div>
+                    </div>
+                    <div class="payments__card-item-two-save">
+                        <div class="payments__card-item-two-discount">
+                            <div class="payments__card-item-two-discount-one">SAVE $140 - 40% OFF!</div>
+                            <div class="payments__card-item-two-discount-two"><img src="assets/moneyback.png" alt="">
+                                <p>30-Day Money Back</p>
+                            </div>
+                        </div>
+                        <p class="payments__card-item-two-remaining hourglass"><img src="assets/hourglass.svg" alt="">6
+                            orders at
+                            this price remaining</p>
+                    </div>
+                    <div class="payments__card-item-two-container">
+                        <a href="#">GET YOUR MAGIC</a>
+                        <div>
+                            <img src="assets/amex.png" alt="">
+                            <img src="assets/apple.png" alt="">
+                            <img src="assets/google.png" alt="">
+                            <img src="assets/maestro.png" alt="">
+                            <img src="assets/mastercard.png" alt="">
+                            <img src="assets/paypal.png" alt="">
+                            <img src="assets/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payments Mobile -->
+            <div class="payments__card-mobile">
+                <!-- First Card -->
+                <div class="payments__card-item_two">
+                    <img src="assets/mmassagethree.png" alt="" class="payments__card-item-two-image">
+                    <div class="payments__card-item_two-mp">MOST POPULAR</div>
+                    <h1>Buy 2 + <span>Get 1 Free</span></h1>
+                    <div class="payments__card-item-two-price">
+                        <div class="payments__card-item-two-newprice">
+                            <h2>$139.90</h2>
+                        </div>
+                        <div class="payments__card-item-two-oldprice">$209.85</div>
+                    </div>
+                    <div class="payments__card-item-two-afterpay">
+                        <p>or 4 interest-free installments of <strong>$34.99</strong> by</p>
+                        <div>
+                            <img src="assets/afterpay.png" alt="" class="payments__card-item-one-afterpay">
+                        </div>
+                    </div>
+                    <div class="payments__card-item-two-save">
+                        <div class="payments__card-item-two-discount">
+                            <div class="payments__card-item-two-discount-one">SAVE $70 - 33% OFF!</div>
+                            <div class="payments__card-item-two-discount-two">
+                                <p>Special online price!</p>
+                            </div>
+                        </div>
+                        <p class="payments__card-item-two-remaining hourglass"><img src="assets/hourglass.svg" alt="">6
+                            orders at this price remaining</p>
+                    </div>
+                    <div class="payments__card-item-two-container">
+                        <a href="#">GET YOUR MAGIC</a>
+                        <div>
+                            <img src="assets/amex.png" alt="">
+                            <img src="assets/apple.png" alt="">
+                            <img src="assets/google.png" alt="">
+                            <img src="assets/maestro.png" alt="">
+                            <img src="assets/mastercard.png" alt="">
+                            <img src="assets/paypal.png" alt="">
+                            <img src="assets/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="payments__card-item three">
+                    <img src="assets/mmassagefive.png" alt="" class="payments__card-item-three-image">
+                    <div class="payments__card-item_three-mp">Best Value</div>
+                    <h1>Buy 3 + <span>Get 2 Free</span></h1>
+                    <div class="payments__card-item-two-price">
+                        <div class="payments__card-item-two-newprice">
+                            <h2>$209.85</h2>
+                        </div>
+                        <div class="payments__card-item-two-oldprice">$349.95</div>
+                    </div>
+                    <div class="payments__card-item-two-afterpay">
+                        <p>or 4 interest-free installments of <strong>$52.50</strong> by</p>
+                        <div>
+                            <img src="assets/afterpay.png" alt="" class="payments__card-item-one-afterpay">
+                        </div>
+                    </div>
+                    <div class="payments__card-item-two-save">
+                        <div class="payments__card-item-two-discount">
+                            <div class="payments__card-item-two-discount-one">SAVE $140 - 40% OFF!</div>
+                            <div class="payments__card-item-two-discount-two">
+                                <p>Special online price!</p>
+                            </div>
+                        </div>
+                        <p class="payments__card-item-two-remaining hourglass"><img src="assets/hourglass.svg" alt="">6
+                            orders at this price remaining</p>
+                    </div>
+                    <div class="payments__card-item-two-container">
+                        <a href="#">GET YOUR MAGIC</a>
+                        <div>
+                            <img src="assets/amex.png" alt="">
+                            <img src="assets/apple.png" alt="">
+                            <img src="assets/google.png" alt="">
+                            <img src="assets/maestro.png" alt="">
+                            <img src="assets/mastercard.png" alt="">
+                            <img src="assets/paypal.png" alt="">
+                            <img src="assets/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="payments__card-item one">
+                    <img src="assets/mmassageone.png" alt="" class="payments__card-item-one-image">
+                    <h1>Buy MagicMassage</h1>
+                    <div class="payments__card-item-price">
+                        <h2>$69.95</h2>
+                    </div>
+                    <div class="payments__card-item-afterpay">
+                        <p>or 4 interest-free installments of <strong>$17.50</strong> by</p>
+                        <div>
+                            <img src="assets/afterpay.png" alt="" class="payments__card-item-one-afterpay">
+                        </div>
+                    </div>
+                    <div class="payments__card-item-container">
+                        <a href="#">GET YOUR MAGIC</a>
+                        <div>
+                            <img src="assets/amex.png" alt="">
+                            <img src="assets/apple.png" alt="">
+                            <img src="assets/google.png" alt="">
+                            <img src="assets/maestro.png" alt="">
+                            <img src="assets/mastercard.png" alt="">
+                            <img src="assets/paypal.png" alt="">
+                            <img src="assets/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -206,9 +381,10 @@
             <h1 class="reviews-heading">Hear what our customers&nbsp;<span>are saying</span></h1>
             <div class="reviews__reviews">
                 <div class="reviews-count">
-                    <img src="assets/reviewstarsb.svg" alt="">131 TOTAL REVIEWS
+                    <img src="assets/reviewstarsb.svg" alt="">
+                    <p>131 TOTAL REVIEWS</p>
                 </div>
-                <div class="reviews-write">Write a review</div>
+                <a href="#" class="reviews-write">Write a review</a>
             </div>
             <div class="reviews__card">
                 <!-- Review 1 -->
@@ -305,11 +481,46 @@
                 <div class="faq__image">
                     <img src="assets/faqImage.png" alt="">
                 </div>
+                <div class="faq__image-mobile">
+                    <img src="assets/faqImageMobile.png" alt="">
+                </div>
                 <div class="faq__accordion">
-                    <div class="faq__accordion-item"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <button class="faq__accordion-item">How long does the battery last fully charged? <img
+                                src="assets/VectorDown.png" alt=""></button>
+                        <div class="answer">
+                            <p>The MagicMassage™ can last up to 6 hours when it's fully charged.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="faq__accordion-item">Can I use it in the shower? <img src="assets/VectorDown.png"
+                                alt=""></button>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore?</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="faq__accordion-item">What is included in the package <img
+                                src="assets/VectorDown.png" alt=""></button>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sint.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="faq__accordion-item">Is the MagicMassage™ designed only for the head? <img
+                                src="assets/VectorDown.png" alt=""></button>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iure.</p>
+                        </div>
+                    </div>
+
+                    <div class="seeAll" onclick="seeAllFaq()">
+                        See All FAQ
+                        <img src="assets/VectorDown.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
