@@ -11,7 +11,6 @@ for (i = 0; i < acc.length; i++) {
             answer.style.height = null;
             answer.style.border = null
             image.style.transform = 'rotate(0)';
-
         } else {
             answer.style.height = "60px";
             answer.style.border = "1px solid #31548E";
@@ -36,7 +35,6 @@ window.addEventListener('load', () => {
         image.style.transform = 'rotate(180deg)';
     }
 });
-
 
 
 var seeAll = document.querySelector(".seeAll");
@@ -79,8 +77,6 @@ function seeAllFaq() {
         })
     }
 
-
-
     let seeAllImg = seeAll.lastChild.previousSibling
     if (seeAllImg.style.transform == 'rotate(0deg)') {
         seeAllImg.style.transform = 'rotate(180deg)'
@@ -88,6 +84,3 @@ function seeAllFaq() {
         seeAllImg.style.transform = 'rotate(0)'
     }
 }
-
-
-

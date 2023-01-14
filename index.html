@@ -43,10 +43,22 @@
             <div class="header__container">
                 <!-- Left item -->
                 <div class="header__left">
-                    <div class="header__heading">
-                        <h1>All-in-one massager that works like&nbsp;<span>magic!</span>&nbsp;
-                        </h1>
-                        <img src="assets/headerArrow.png" alt="">
+                    <div class="header__heading-desktop">
+                        <div class="header__heading">
+                            <h1>All-in-one massager that works like&nbsp;<span>magic!</span>&nbsp;
+                            </h1>
+                            <img src="assets/headerArrow.png" alt="" class="header__arrow-desktop">
+                            <img src="assets/headerarrowmobile.svg" alt="" class="header__arrow-mobile">
+                        </div>
+                    </div>
+                    <div class="header__heading-mobile">
+                        <div class="header__heading">
+                            <h1>All-in-one massager that works like&nbsp;<span>magic!</span>&nbsp;
+                            </h1>
+                            <img src="assets/headerArrow.png" alt="" class="header__arrow-desktop">
+                            <img src="assets/headerarrowmobile.svg" alt="" class="header__arrow-mobile">
+                        </div>
+                        <img src="assets/magicmassagemobile.png" alt="" class="product__image-mobile">
                     </div>
                     <p class="header__paragraph">MagicMassage™ provides relief from head tensions, muscle aches,
                         sleep
@@ -64,7 +76,8 @@
                         </div>
                         <div class="header__features-item">
                             <img src="assets/fbMassage.svg" alt="">
-                            <h1>Full-Body Massage</h1>
+                            <h1 class="header__features-item-h1-desktop">Full-Body Massage</h1>
+                            <h1 class="header__features-item-h1-mobile">Body Massage</h1>
                             <ul>
                                 <li>• Perfect muscle recoverys</li>
                                 <li>• Improved circulation</li>
@@ -91,12 +104,8 @@
                         <a href="#">Get The MagicMassage™ Now</a>
                         <div href="#">Bundles from&nbsp;<span>$41.50</span>&nbsp;each</div>
                     </div>
-                </div>
-                <!-- Image -->
-                <div class="header__right">
-                    <img src="assets/productImage1.png" alt="">
-                    <div class="header__buyer">
-                        <img src="assets/buyerImage.jpg" alt="" class="header__buyer-image">
+                    <div class="header__buyer-mobile">
+                        <img src="assets/buyerImage2.jpg" alt="" class="header__buyer-image">
                         <div>
                             <p class="header__buyer-review">“It feels amazing on my head and it soothes muscle tension.“
                             </p>
@@ -112,10 +121,32 @@
                                         VERIFIED BUYER
                                     </p>
                                 </div>
-
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="header__right">
+                    <img src="assets/productImage1.png" alt="" class="product__image-desktop">
+                    <div class="header__buyer">
+                        <img src="assets/buyerImage2.jpg" alt="" class="header__buyer-image">
+                        <div>
+                            <p class="header__buyer-review">“It feels amazing on my head and it soothes muscle tension.“
+                            </p>
+                            <div class="header__buyer-verified">
+                                <div class="header__buyer-name">
+                                    <img src="assets/reviewstarss.svg" alt="">
+                                    <p>Debra N.</p>
+                                </div>
 
+                                <div class="header__buyer-verified-buyer">
+                                    <img src="assets/verifiedBuyer.svg" alt="">
+                                    <p>
+                                        VERIFIED BUYER
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,6 +214,7 @@
                 <!-- Second Card -->
                 <div class="payments__card-item_two">
                     <img src="assets/mmassagethree.png" alt="" class="payments__card-item-two-image">
+                    <!-- <img src="assets/paymentsArrow.svg" alt="" class="payments__card-item_two-arrow"> -->
                     <div class="payments__card-item_two-mp">MOST POPULAR</div>
                     <h1>Buy 2 + <span>Get 1 Free</span></h1>
                     <div class="payments__card-item-two-price">
@@ -305,7 +337,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Second Card -->
                 <div class="payments__card-item three">
                     <img src="assets/mmassagefive.png" alt="" class="payments__card-item-three-image">
@@ -492,7 +523,6 @@
                             <p>The MagicMassage™ can last up to 6 hours when it's fully charged.</p>
                         </div>
                     </div>
-
                     <div>
                         <button class="faq__accordion-item">Can I use it in the shower? <img src="assets/VectorDown.png"
                                 alt=""></button>
@@ -500,7 +530,6 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore?</p>
                         </div>
                     </div>
-
                     <div>
                         <button class="faq__accordion-item">What is included in the package <img
                                 src="assets/VectorDown.png" alt=""></button>
@@ -508,7 +537,6 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sint.</p>
                         </div>
                     </div>
-
                     <div>
                         <button class="faq__accordion-item">Is the MagicMassage™ designed only for the head? <img
                                 src="assets/VectorDown.png" alt=""></button>
@@ -516,7 +544,6 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iure.</p>
                         </div>
                     </div>
-
                     <div class="seeAll" onclick="seeAllFaq()">
                         See All FAQ
                         <img src="assets/VectorDown.png" alt="">
