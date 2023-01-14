@@ -1089,6 +1089,11 @@ a {
   flex-direction: row;
 }
 
+.reviews__card-mobile {
+  display: none;
+}
+
+
 .reviews-count {
   display: flex;
   justify-content: center;
@@ -1119,6 +1124,7 @@ a {
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
   border-radius: 10px;
+  user-select: none;
 }
 
 .reviews__card-reviewer {
@@ -1173,8 +1179,9 @@ a {
   color: #262626;
 }
 
-
-
+.reviews__card-pgn {
+  display: none;
+}
 
 
 
@@ -1383,7 +1390,7 @@ a {
 
 
 
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
 
   /* Header */
 
@@ -1790,7 +1797,95 @@ a {
   }
 
 
+  /* Reviews */
+
+  .reviews-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .reviews-heading span {
+    background-image: url('assets/reviesunderlinemobile.svg');
+  }
+
+
+  .reviews__reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+  }
+
+  .reviews__reviews > * + * {
+    margin-left: 6rem;
+  }
+
+  .reviews-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
   
+  .reviews-count p {
+    margin-left: 0;
+  }
+
+  .reviews-count > * + * {
+    margin-top: .3rem;
+  }
+
+  .reviews__card {
+    display: none;
+  }
+
+  .reviews__card-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 0.3s ease-out;
+  }
+
+  .reviews__card-mobile {
+    margin-left: 28rem;
+  }
+
+  .reviews__card-pgn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .reviews__card-pgn-btn {
+    width: 14px;
+    height: 14px;
+    background: #CBCED6;
+    border-radius: 9999px;
+    border: none;
+    text-decoration: none;
+  }
+
+  .reviews__card-pgn > * + * {
+    margin-left: .5rem;
+  }
+
+  .reviews__card-pgn-btn.btnactive { 
+    background: #197AFF;
+  }
+
+
+  .grabbing {
+    cursor: grabbing;
+  }
+
+
+
 
   /* FAQ */
   .faq {
@@ -1870,9 +1965,5 @@ a {
   .seeAll img {
     margin-left: 0.5rem;
   }
-  
-}
-
-@media (max-width: 768px) {
   
 }
